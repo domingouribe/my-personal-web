@@ -1,8 +1,9 @@
+---
+import { Image } from "astro:assets";
+import proffileImage from "../../images/profileImage.png";
+---
+
 <a href="/" class="brand">
-  <img
-    class="brand__image"
-    src="/src/images/profile.png"
-    alt="Miniatura foto de perfil"
-  />
-  <span class="brand__tag">Domingo Uribe</span>
+	<Image class="brand__image" src={proffileImage} alt="My profile pictue" />
+	<span class="brand__tag">Domingo Uribe</span>
 </a>
