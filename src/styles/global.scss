@@ -1,0 +1,45 @@
+@use "reset";
+@use "fonts";
+@use "config";
+@use "utils";
+@use "shared/header";
+
+/* HTML */
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: var(--font);
+	line-height: 1.5;
+	background-color: var(--blue-70);
+	color: var(--white);
+	padding-top: 5em;
+	display: flex;
+	flex-flow: column;
+}
+
+.main {
+	display: flex;
+	flex-flow: column wrap;
+	gap: 2em;
+}
+
+.services {
+	display: flex;
+	flex-flow: column wrap;
+}
+.section-subtitle {
+	color: var(--main-theme-color);
+}
+
+.section-title {
+	font-size: 2rem;
+	margin: 1rem 0;
+}

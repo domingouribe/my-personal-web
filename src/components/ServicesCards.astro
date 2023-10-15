@@ -1,0 +1,51 @@
+---
+import Card from "./Card.astro";
+---
+
+<article class="services-cards">
+	<Card
+		icon="ico"
+		title="Astro Framework"
+		subTitle="Tools"
+		description="Desarrollo Web moderno"
+	/>
+	<Card
+		icon="ico"
+		title="Angular"
+		subTitle="Tools"
+		description="Desarrollo de aplicaciones"
+	/>
+	<Card
+		icon="ico"
+		title="BEM"
+		subTitle="Tools"
+		description="Metodología de trabajo con CSS y HTML"
+	/>
+	<Card
+		icon="ico"
+		title="UI / UX"
+		subTitle="Skills"
+		description="Diseño y desarrollo de interfaces de usuario basado en las mejores prácticas de UX"
+	/>
+	<Card
+		icon="ico"
+		title="WordPress Development"
+		subTitle="Skills"
+		description="Diseño y desarrollo Themes y PLugins para WordPress"
+	/>
+	<Card
+		icon="ico"
+		title="Ilustración digital"
+		subTitle="Skills"
+		description="Dibujo a mano alzada, diseño de personajes, colorado digital"
+	/>
+</article>
+
+<style lang="scss">
+	.services-cards {
+		display: flex;
+		flex-flow: row wrap;
+		gap: 2em;
+		font-size: 14px;
+	}
+</style>
