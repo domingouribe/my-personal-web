@@ -1,6 +1,6 @@
 ---
 export interface Props {
-	icon?: any;
+	icon?: string;
 	title: string;
 	subTitle: string;
 	description: string;
@@ -10,6 +10,7 @@ const { icon, title, subTitle, description } = Astro.props;
 
 <div class="card">
 	<i>{icon}</i>
+
 	<h3 class="card__title">{title}</h3>
 	<span class="card__subtitle"> {subTitle}</span>
 	<p class="card__description">
