@@ -1,16 +1,15 @@
 ---
 export interface Props {
-	icon?: string;
+	iconURL?: string;
 	title: string;
 	subTitle: string;
 	description: string;
 }
-const { icon, title, subTitle, description } = Astro.props;
+const { iconURL, title, subTitle, description } = Astro.props;
 ---
 
 <div class="card">
-	<i>{icon}</i>
-
+	<img class="card__icon" src={iconURL} width="100" height="auto" />
 	<h3 class="card__title">{title}</h3>
 	<span class="card__subtitle"> {subTitle}</span>
 	<p class="card__description">
@@ -20,14 +19,20 @@ const { icon, title, subTitle, description } = Astro.props;
 
 <style lang="scss">
 	.card {
-		background-color: var(--white-25);
+		//background-color: var(--white-25);
 		padding: 2em;
 		border-radius: 1em;
 		display: flex;
 		flex-flow: column wrap;
 		width: 20em;
 		flex-grow: 1;
+		align-items: center;
 
+		&__icon {
+			margin-bottom: 1em;
+			width: 6em;
+			height: auto;
+		}
 		&__title {
 			font-size: 1.5rem;
 			margin: 0;
