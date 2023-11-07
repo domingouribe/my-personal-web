@@ -4,7 +4,33 @@ import proffileImage from "../../images/profileImage.png";
 ---
 
 <a href="/" class="brand">
-	<Image class="brand__image" src={proffileImage} alt="My profile pictue" />
-	<span class="brand__tag">Domingo Uribe</span>
-	<span class="brand__ocupation">Desarrollador Fronted</span>
+  <Image class="brand__image" src={proffileImage} alt="My profile pictue" />
+  <div class="brand-name">
+    <span class="brad-name__tag">Domingo Uribe</span>
+    <span class="brand-name__ocupation">Desarrollador Fronted</span>
+  </div>
 </a>
+
+<style lang="scss">
+  .brand {
+    display: flex;
+    color: var(--white);
+  }
+  .brand-name {
+    display: flex;
+    flex-flow: column;
+
+    &__tag {
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    &__ocupation {
+      color: var(--theme-color);
+      text-transform: lowercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
+      word-spacing: 0.3rem;
+    }
+  }
+</style>
