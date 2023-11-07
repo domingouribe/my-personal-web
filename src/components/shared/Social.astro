@@ -1,5 +1,7 @@
 ---
-
+import { Image } from "astro:assets";
+import Github from '../../assets/icons/github.svg';
+import LinkeInd from '../../assets/icons/linkedin.svg';
 ---
 
 <div class="social-bar">
@@ -7,20 +9,17 @@
     href="https://github.com/domingouribe"
     target="_blank"
     class="social-bar__link">
-    <img class="social-bar__icon" src="./src/images/icons/github.svg" alt="" />
+    <Image src={Github} alt="Githubg logo" class="social-bar__icon"/> 
   </a>
 
   <a
     href="https://www.linkedin.com/in/domingouribe/"
     target="_blank"
     class="social-bar__link">
-    <img
-      class="social-bar__icon"
-      src="./src/images/icons/linkedin.svg"
-      alt=""
-    />
+    <Image src={LinkeInd} alt="Githubg logo" class="social-bar__icon"/> 
   </a>
 </div>
+
 <style lang="scss">
   .social-bar {
     display: flex;
