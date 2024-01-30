@@ -1,36 +1,36 @@
 ---
-import { Image } from "astro:assets";
-import profilePicture from '../../assets/profileImage.png'
+interface Props {
+	tag: string;
+	ocupation: string;
+}
+
+const { tag, ocupation } = Astro.props;
 ---
 
-<a href="/" class="brand">
-  <Image class="brand__image" src={profilePicture} alt="My profile pictue" />
-  <div class="brand-name">
-    <span class="brad-name__tag">Domingo Uribe</span>
-    <span class="brand-name__ocupation">Desarrollador Fronted</span>
-  </div>
+<a href="/" class="Brand">
+	<span class="Brand-tag">{tag}</span>
+	<span class="Brand-ocupation">{ocupation}</span>
 </a>
 
 <style lang="scss">
-  .brand {
-    display: flex;
-    color: var(--white);
-  }
-  .brand-name {
-    display: flex;
-    flex-flow: column;
+	.Brand {
+		display: flex;
+		flex-flow: column;
+		color: var(--white);
+		text-decoration: none;
 
-    &__tag {
-      color: var(--white);
-      text-transform: uppercase;
-    }
+		&-tag {
+			color: var(--white);
+			text-transform: uppercase;
+			font-weight: bolder;
+		}
 
-    &__ocupation {
-      color: var(--theme-color);
-      text-transform: lowercase;
-      font-size: 0.8rem;
-      letter-spacing: 0.1rem;
-      word-spacing: 0.3rem;
-    }
-  }
+		&-ocupation {
+			color: var(--theme-color);
+			text-transform: lowercase;
+			font-size: 0.8rem;
+			letter-spacing: 0.1rem;
+			word-spacing: 0.3rem;
+		}
+	}
 </style>

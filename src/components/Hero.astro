@@ -2,64 +2,61 @@
 import Social from "./shared/Social.astro";
 ---
 
-<section class="hero">
-  <div class="container">
-    <article class="hero__content">
-      <span class="hero__subtitle">Bienvenidos a mi portafolio</span>
-      <h1 class="hero__title">
-        ¡Hola! Soy <span class="theme-color">Domingo Uribe</span>
-      </h1>
-      <p class="hero__description">
-        Soy programador Frontend con experiencia de más de 7 años en desarrollo
-        Web. Disfruto de aprender y he logrado un alto nivel en HTML, CSS y
-        JavaScript. Me gusta trabajar con Angular y Astro. Soy un autodidacta
-        profesional.
-      </p>
-
-      <Social />
-    </article>
-
-  </div>
+<section class="Hero">
+	<div class="container">
+		<article class="Hero-content">
+			<span class="Hero-subtitle">Bienvenidos a mi portafolio</span>
+			<h1 class="Hero-title">
+				¡Hola! Soy <span class="theme-color">Domingo Uribe</span>
+			</h1>
+			<p class="Hero-description">
+				Soy programador Frontend con experiencia de más de 7 años en desarrollo
+				Web. Disfruto de aprender y he logrado un alto nivel en HTML, CSS y
+				JavaScript. Me gusta trabajar con Angular y Astro. Soy un autodidacta
+				profesional.
+			</p>
+		</article>
+		<Social />
+	</div>
 </section>
 
 <style lang="scss">
-  .hero {
-    display: flex;
-    flex-flow: column wrap;
-    min-height: 70vh;
-    justify-content: center;
-    padding: 3em 0;
+	.Hero {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		padding: 3em 0;
 
-    &__content {
-      flex-grow: 1;
-    }
+		&-content {
+			flex-grow: 1;
+		}
 
-    &__subtitle {
-      line-height: 0;
-      font-weight: 700;
-    }
+		&-subtitle {
+			line-height: 0;
+			font-weight: 700;
+		}
 
-    &__title {
-      font-size: 3rem;
-      line-height: 1.5;
-      margin: 0.5rem 0;
-      letter-spacing: -0.1rem;
-    }
+		&-title {
+			font-size: 3rem;
+			line-height: 1.5;
+			margin: 0.5rem 0;
+			letter-spacing: -0.1rem;
+		}
 
-    &__description {
-      line-height: 1.8;
-    }
+		&-description {
+			line-height: 1.8;
+		}
 
-    @media screen and (min-width: 768px) {
-      &__subtitle {
-        font-size: 2rem;
-      }
-      &__title {
-        font-size: 5rem;
-      }
-      &__description {
-        font-size: 1.2rem;
-      }
-    }
-  }
+		@media screen and (min-width: 768px) {
+			&-subtitle {
+				font-size: 2rem;
+			}
+			&-title {
+				font-size: 5rem;
+			}
+			&-description {
+				font-size: 1.2rem;
+			}
+		}
+	}
 </style>

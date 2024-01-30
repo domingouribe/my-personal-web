@@ -5,7 +5,7 @@ import Social from "./Social.astro";
 
 <nav class="nav">
 	<div class="nav__level">
-		<Brand />
+		<Brand tag="Domingo Uribe" ocupation="Desarrollador Web" />
 	</div>
 
 	<div class="nav__level level--menu">
@@ -19,3 +19,59 @@ import Social from "./Social.astro";
 		<Social />
 	</div>
 </nav>
+<style lang="scss">
+	.nav {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		background-color: #0e0e11;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		width: 100vw;
+		height: 0vh;
+		opacity: 0;
+		transition: all 0.3s ease;
+		padding: 0;
+		gap: 1.5em;
+		pointer-events: none;
+
+		&.nav-open {
+			height: 100vh;
+			opacity: 1;
+			padding: 1.5em;
+			pointer-events: all;
+		}
+
+		.level--menu {
+			display: flex;
+			flex-flow: column wrap;
+			text-align: center;
+
+			&__link {
+				color: white;
+				text-decoration: none;
+				font-size: 0.9rem;
+				padding: 0.3em 1rem;
+				font-size: 2.5rem;
+				font-weight: 700;
+				transition: all 0.3s ease;
+
+				&:hover {
+					color: var(--main-theme-color);
+				}
+
+				&:active {
+					color: var(--main-theme-color);
+				}
+
+				&.current {
+					color: var(--main-theme-color);
+				}
+			}
+		}
+	}
+</style>

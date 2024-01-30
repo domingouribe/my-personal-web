@@ -2,62 +2,39 @@
 import Card from "./Card.astro";
 ---
 
-<article class="services-cards">
-  <Card
-    iconURL="../assets/icons/astro.svg"
-    title="Astro Framework"
-    subTitle="Tools"
-    description="Desarrollo de sitios Web modernos con Astro, la nueva forma de crear sitios Web de información estática enfocada en el contenido y el SEO y que corren a la velocidad de la luz."
-  />
-  <Card
-    iconURL="../assets/icons/react.svg"
-    title="React"
-    subTitle="tools"
-	description="Desarrollo de aplicaciones Web con la librería de Meta para el desarrollo de Interfaz de usuasrio"
-  />
-  <Card
-    iconURL="../assets/icons/angular.svg"
-    title="Angular"
-    subTitle="Tools"
-    description="Desarrollo de aplicaciones... Estoy desarrollando mi propia aplicación Web de seguimiento y avance de mis proyectos."
-  />
-  <Card
-    iconURL="../assets/icons/html5.svg"
-    title="HTML/CSS/BEM"
-    subTitle="Tools"
-    description="Metodología de trabajo BEM con CSS y HTML para la participación en equipos de trabajo y desarrollo ágil."
-  />
-  <Card
-    iconURL="../assets/icons/figma.svg"
-    title="Figma / UI / UX"
-    subTitle="Skills"
-    description="Diseño y desarrollo de interfaces de usuario basado en las mejores prácticas de UX con Figma. Trabajo con Atomic Design, investigación y documentación de mis proyectos."
-  />
-  <Card
-    iconURL="../assets/icons/wordpress.svg"
-    title="WordPress Development"
-    subTitle="Skills"
-    description="Diseño y desarrollo de Themes y Plugins para WordPress. Acá tengo experiencia de más de 7 años."
-  />
-  <Card
-    iconURL="../assets/icons/design.svg"
-    title="Ilustración digital"
-    subTitle="Skills"
-    description="Dibujo a mano alzada, diseño de personajes, colorado digital, y desarrollo de bocetos para diseño UI y piezas gráficas para mis diseños."
-  />
-  <Card
-    iconURL="../assets/icons/language.svg"
-    title="Idioma inglés"
-    subTitle="Skills"
-    description="Aprendo temas de mi interés, leo documentación técnica sobre las tecnologías que necesito con fluidez, y participo en conversaciones técnicas y cotidianas con éxito en idioma inglés."
-  />
-</article>
+<section class="Services">
+	<Card
+		iconURL="src/assets/icons/astro.svg"
+		title="Astro Framework"
+		subTitle="Tools"
+		description="Desarrollo de sitios Web modernos con Astro, la nueva forma de crear sitios Web de información estática enfocada en el contenido y el SEO y que corren a la velocidad de la luz."
+	/>
+	<Card
+		iconURL="src/assets/icons/react.svg"
+		title="React"
+		subTitle="tools"
+		description="Desarrollo de aplicaciones Web con la librería de Meta para el desarrollo de Interfaz de usuasrio"
+	/>
+
+	<Card
+		iconURL="src/assets/icons/css.svg"
+		title="Metodologías CSS SUIT/BEM"
+		subTitle="Tools"
+		description="Metodología de trabajo BEM con CSS y HTML para la participación en equipos de trabajo y desarrollo ágil."
+	/>
+	<Card
+		iconURL="src/assets/icons/figma.svg"
+		title="Figma"
+		subTitle="Tools"
+		description="Diseño colaborativo simplificado con Figma, la plataforma líder para equipos de diseño que permite crear, prototipar y colaborar en proyectos de manera eficiente y en tiempo real, allanando el camino para una creatividad sin límites y una comunicación fluida entre los miembros del equipo."
+	/>
+</section>
 
 <style lang="scss">
-  .services-cards {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2em;
-    font-size: 14px;
-  }
+	.Services {
+		display: flex;
+		flex-flow: row wrap;
+		gap: 2em;
+		font-size: 14px;
+	}
 </style>

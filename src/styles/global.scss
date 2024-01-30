@@ -1,13 +1,39 @@
 @use "reset";
-@use "config";
-@use "utils";
-@use "shared/header";
+
+:root {
+	--main-theme-color: #f9b17a;
+	--blue-100: #2d3250;
+	--blue-70: #424769;
+	--blue-35: #676f9d;
+	--white: #ececec;
+	--white-50: hsla(0, 0%, 100%, 0.5);
+	--white-25: hsla(0, 0%, 100%, 0.219);
+	--font: "Poppins", sans-serif;
+	--container-lg: 1200px;
+}
+
+/* Utilities */
+.theme-color {
+	color: var(--main-theme-color);
+}
+
+/* Grid Layout */
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: var(--container-lg);
+	position: relative;
+	padding: 0 1em;
+	display: flex;
+	flex-flow: inherit;
+}
 
 /* HTML */
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+
 *,
 *:before,
 *:after {
@@ -26,19 +52,6 @@ body {
 
 .main {
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 	gap: 2em;
-}
-
-.services {
-	display: flex;
-	flex-flow: column wrap;
-}
-.section-subtitle {
-	color: var(--main-theme-color);
-}
-
-.section-title {
-	font-size: 2rem;
-	margin: 1rem 0;
 }

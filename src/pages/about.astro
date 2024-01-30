@@ -7,35 +7,29 @@ const pageTitle = "Acerca de mí";
 
 <PagesLayout pageTitle={pageTitle}>
 	<section class="page">
-		<div class="container">
-			<article class="page__content">
-				<span class="page__subtitle">Bienvenidos a mi portafolio</span>
-				<h1 class="page__title">
-					Acerca<span class="theme-color"> de mí</span>
-				</h1>
-				<p class="page__description">
-					Acá te mostraré algo sobre mis estudios y experiencia en
-					desarrollo Web
-				</p>
-				<Social />
-			</article>
-		</div>
+		<article class="page__content">
+			<span class="page__subtitle">Bienvenidos a mi portafolio</span>
+			<h1 class="page__title">
+				Acerca<span class="theme-color"> de mí</span>
+			</h1>
+			<p class="page__description">
+				Acá te mostraré algo sobre mis estudios y experiencia en desarrollo Web
+			</p>
+			<Social />
+		</article>
 	</section>
 
-	<!--What i do section-->
-	<div class="container">
-		<section class="services">
-			<span class="section-subtitle">Educación</span>
-			<h2 class="section-title">Soy un autodidacta profesional</h2>
-			<p>
-				Comencé a aprender sobre Diseño Web en 2004 mientras trabajaba
-				como inspector en una escuela, aprovechando mis ratos libres
-				para estudiar HTML y CSS junto con programas de diseño
-				vectorial. Así, desde ese año hasta hoy es que me he educado
-				contínuamente por mi cuenta, y esto es lo que he aprendido:
-			</p>
+	<section class="services">
+		<span class="section-subtitle">Educación</span>
+		<h2 class="section-title">Soy un autodidacta profesional</h2>
+		<p>
+			Comencé a aprender sobre Diseño Web en 2004 mientras trabajaba como
+			inspector en una escuela, aprovechando mis ratos libres para estudiar HTML
+			y CSS junto con programas de diseño vectorial. Así, desde ese año hasta
+			hoy es que me he educado contínuamente por mi cuenta, y esto es lo que he
+			aprendido:
+		</p>
 
-			<ServicesCards />
-		</section>
-	</div>
+		<ServicesCards />
+	</section>
 </PagesLayout>

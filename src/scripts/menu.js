@@ -1,7 +1,7 @@
-const button = document.querySelector('.menu')
-const nav = document.querySelector('.nav')
+const button = document.querySelector('.Bars')
+const nav = document.querySelector('.Navigation')
 
 button.addEventListener('click', () => {
-    nav.classList.toggle('nav-open')
-    button.classList.toggle('change')
+    nav.classList.toggle('isActive')
+    button.classList.toggle('TransformBars')
 })
