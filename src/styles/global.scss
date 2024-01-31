@@ -1,7 +1,7 @@
 @use "reset";
 
 :root {
-	--main-theme-color: #f9b17a;
+	--main-theme-color: #f5a467;
 	--blue-100: #2d3250;
 	--blue-70: #424769;
 	--blue-35: #676f9d;
@@ -13,7 +13,7 @@
 }
 
 /* Utilities */
-.theme-color {
+.ThemeColor {
 	color: var(--main-theme-color);
 }
 
@@ -42,16 +42,20 @@ html {
 
 body {
 	font-family: var(--font);
-	line-height: 1.5;
-	background-color: var(--blue-70);
+	line-height: 1.7;
+	background-color: var(--blue-100);
 	color: var(--white);
-	padding-top: 5em;
+	// padding-top: 4.6875em;
 	display: flex;
-	flex-flow: column;
+	flex-flow: column nowrap;
+	position: relative;
 }
 
 .main {
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 2em;
+	max-width: 64em;
+	margin: auto;
+	padding: 0 1em;
 }

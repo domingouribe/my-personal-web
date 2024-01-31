@@ -6,14 +6,26 @@ import LinkeInd from "../../assets/icons/linkedin.svg";
 
 <div class="Social">
 	<a href="https://github.com/domingouribe" target="_blank" class="Social-link">
-		<Image src={Github} alt="Githubg logo" class="Social-icon" />
+		<Image
+			src={Github}
+			alt="Githubg logo"
+			class="Social-icon"
+			width={80}
+			height={80}
+		/>
 	</a>
 
 	<a
 		href="https://www.linkedin.com/in/domingouribe/"
 		target="_blank"
 		class="Social-link">
-		<Image src={LinkeInd} alt="Githubg logo" class="Social-icon" />
+		<Image
+			src={LinkeInd}
+			alt="Githubg logo"
+			class="Social-icon"
+			width={80}
+			height={80}
+		/>
 	</a>
 </div>
 
@@ -23,9 +35,13 @@ import LinkeInd from "../../assets/icons/linkedin.svg";
 		flex-flow: row nowrap;
 		justify-content: center;
 		gap: 2em;
-		margin: 2em 0;
-		height: 22vh;
 		align-items: center;
+
+		a {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
 
 		&-icon {
 			fill: var(--white);

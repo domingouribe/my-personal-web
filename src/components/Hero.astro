@@ -3,29 +3,31 @@ import Social from "./shared/Social.astro";
 ---
 
 <section class="Hero">
-	<div class="container">
-		<article class="Hero-content">
-			<span class="Hero-subtitle">Bienvenidos a mi portafolio</span>
-			<h1 class="Hero-title">
-				¡Hola! Soy <span class="theme-color">Domingo Uribe</span>
-			</h1>
-			<p class="Hero-description">
-				Soy programador Frontend con experiencia de más de 7 años en desarrollo
-				Web. Disfruto de aprender y he logrado un alto nivel en HTML, CSS y
-				JavaScript. Me gusta trabajar con Angular y Astro. Soy un autodidacta
-				profesional.
-			</p>
-		</article>
-		<Social />
-	</div>
+	<article class="Hero-content">
+		<span class="Hero-subtitle">Bienvenidos a mi portafolio</span>
+		<h1 class="Hero-title">
+			¡Hola! Soy <span class="ThemeColor">Domingo Uribe</span>
+		</h1>
+		<p class="Hero-description">
+			Soy programador Frontend con experiencia de más de 7 años en desarrollo
+			Web. Disfruto de aprender y he logrado un alto nivel en HTML, CSS y
+			JavaScript. Me gusta trabajar con Angular y Astro. Soy un autodidacta
+			profesional.
+		</p>
+	</article>
 </section>
+<Social />
 
 <style lang="scss">
 	.Hero {
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: center;
-		padding: 3em 0;
+		max-width: 1024px;
+		margin: auto;
+		padding: 4em 0 0 0;
+		align-items: center;
+		text-align: center;
 
 		&-content {
 			flex-grow: 1;
