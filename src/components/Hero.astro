@@ -3,50 +3,47 @@ import Social from "./shared/Social.astro";
 ---
 
 <section class="Hero">
-	<article class="Hero-content">
-		<span class="Hero-subtitle">Bienvenidos a mi portafolio</span>
-		<h1 class="Hero-title">
-			¡Hola! Soy <span class="ThemeColor">Domingo Uribe</span>
-		</h1>
-		<p class="Hero-description">
-			Soy programador Frontend con experiencia de más de 7 años en desarrollo
-			Web. Disfruto de aprender y he logrado un alto nivel en HTML, CSS y
-			JavaScript. Me gusta trabajar con Angular y Astro. Soy un autodidacta
-			profesional.
-		</p>
-	</article>
+	<span class="Hero-subtitle">Bienvenidos a mi portafolio</span>
+	<h1 class="Hero-title">
+		¡Hola! Soy <span class="ThemeColor">Domingo Uribe</span>
+	</h1>
+	<p class="Hero-description">
+		Soy programador Frontend con experiencia de más de 7 años en desarrollo Web.
+		Disfruto de aprender y he logrado un alto nivel en HTML, CSS y JavaScript.
+		Me gusta trabajar con Angular y Astro. Soy un autodidacta profesional.
+	</p>
 </section>
+
 <Social />
 
 <style lang="scss">
 	.Hero {
 		display: flex;
 		flex-flow: column wrap;
-		justify-content: center;
+		justify-content: flex-start;
 		max-width: 1024px;
 		margin: auto;
-		padding: 4em 0 0 0;
-		align-items: center;
-		text-align: center;
-
-		&-content {
-			flex-grow: 1;
-		}
+		align-items: normal;
+		text-align: left;
+		gap: 1em;
+		padding-top: 4em;
 
 		&-subtitle {
-			line-height: 0;
+			font-size: 1.5rem;
 			font-weight: 700;
 		}
 
 		&-title {
 			font-size: 3rem;
 			line-height: 1.5;
-			margin: 0.5rem 0;
+			margin: 0;
 			letter-spacing: -0.1rem;
 		}
 
 		&-description {
 			line-height: 1.8;
+			padding: 0 0 0 0;
+			margin: 0;
 		}
 
 		@media screen and (min-width: 768px) {

@@ -18,37 +18,37 @@ if (!images[imagePath])
 ---
 
 <div class="Card">
-	<Image
-		src={images[imagePath]()}
-		alt={altText}
-		width={80}
-		class="Card-image"
-	/>
-	<h1 class="Card-title">{title}</h1>
-	<p>{subTitle}</p>
-	<p class="Card-description">{description}</p>
+	<div class="Card-imagebox">
+		<Image
+			src={images[imagePath]()}
+			alt={altText}
+			width={60}
+			class="Card-image"
+		/>
+	</div>
+	<div Card-body>
+		<h1 class="Card-title">{title}</h1>
+		<p>{subTitle}</p>
+		<p class="Card-description">{description}</p>
+	</div>
 </div>
 
 <style lang="scss">
 	.Card {
 		width: 280px;
-		background-color: var(--white-25);
+		background-color: var(--blue-70);
 		height: fit-content;
 		color: var(--uiBlack);
 		gap: 1em;
 		border-radius: 1em;
 		overflow: hidden;
 		display: flex;
-		flex-flow: column nowrap;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
+		flex-flow: row nowrap;
 		padding: 2em 1em;
 		flex-grow: 1;
 
 		&-image {
 			object-fit: cover;
-			width: 80px;
 			height: auto;
 			transition: all ease 0.3s;
 

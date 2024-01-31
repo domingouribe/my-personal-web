@@ -59,3 +59,19 @@ body {
 	margin: auto;
 	padding: 0 1em;
 }
+
+@media screen and (max-width: 768px) {
+	body {
+		line-height: 1.5;
+		padding-top: 3em;
+		display: flex;
+	}
+
+	.Navigation {
+		line-height: 2;
+
+		&-link {
+			font-size: 2rem; // Tamaño de fuente más pequeño para dispositivos móviles
+		}
+	}
+}
