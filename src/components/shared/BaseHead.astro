@@ -3,7 +3,6 @@ interface Props {
 	title: string;
 	description: string;
 	image?: string;
-	canonicalURL?: string;
 	imageWidth: number;
 	imageHeight: number;
 }
@@ -11,7 +10,6 @@ interface Props {
 const {
 	title,
 	description,
-	canonicalURL = "",
 	image = "/assets/profileImage.png",
 	imageWidth,
 	imageHeight,
@@ -25,7 +23,7 @@ const {
 <meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->
-<link rel="canonical" href={new URL(canonicalURL, Astro.url)} />
+<link rel="canonical" href={Astro.url} />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
