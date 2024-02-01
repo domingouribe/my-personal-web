@@ -28,7 +28,7 @@ if (!images[imagePath])
 	</div>
 	<div Card-body>
 		<h1 class="Card-title">{title}</h1>
-		<p>{subTitle}</p>
+		<p class="Card-tag">{subTitle}</p>
 		<p class="Card-description">{description}</p>
 	</div>
 </div>
@@ -69,6 +69,17 @@ if (!images[imagePath])
 			margin: 0;
 			font-size: 2rem;
 			letter-spacing: -0.1rem;
+		}
+		&-tag {
+			background-color: var(--main-theme-color-70);
+			display: inline-flex;
+			border-radius: var(--corner-sm);
+			padding: 0.2em 1em;
+			color: #222;
+			font-size: 0.7rem;
+			font-style: italic;
+			text-transform: lowercase;
+			line-height: normal;
 		}
 		&-description {
 			margin: 0;
