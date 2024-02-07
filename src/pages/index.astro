@@ -1,14 +1,43 @@
 ---
 import PagesLayout from "../layouts/PagesLayout.astro";
 import Hero from "../components/Hero.astro";
-import ServicesCards from "../components/ServicesCards.astro";
-
-const pageTitle = "Home";
+import Section from "../components/Section.astro";
+import Card from "../components/Card.astro";
 ---
 
 <PagesLayout
 	title="Domingo Uribe Web Developer"
 	description="Welcome to my personal portfolio where you'll found al my works">
 	<Hero />
-	<ServicesCards />
+	<Section title="Stack" description="Mis herramientas y metodologías">
+		<Card
+			imagePath="/src/assets/icons/astro.svg"
+			altText="Astro Official Logo"
+			title="Astro"
+			subTitle="JavaScript Framework"
+			description="Desarrollo de sitios web modernos con Astro, una nueva forma de crear sitios enfocados en contenido, el SEO efectivo y velocidad."
+		/>
+		<Card
+			imagePath="/src/assets/icons/react.svg"
+			altText="React official logo"
+			title="React"
+			subTitle="JavaScript Library"
+			description="Desarrollo de aplicaciones web con la biblioteca de React para la creación de interfaces de usuario eficientes y dinámicas."
+		/>
+
+		<Card
+			imagePath="/src/assets/icons/css.svg"
+			altText="CSS methodologies"
+			title="CSS SUIT/BEM"
+			subTitle="Methodology"
+			description="Metodologías SUIT y BEM para el trabajo con CSS y HTML que mejora desarrollo ágil de proyectos web colaborativos."
+		/>
+		<Card
+			imagePath="/src/assets/icons/figma.svg"
+			altText="Figma official Logo"
+			title="Figma"
+			subTitle="Tools"
+			description="Diseño UI/UX con Figma para el trabajo en equipos de diseño que permite crear, prototipar y colaborar en proyectos de manera eficiente y en tiempo real."
+		/>
+	</Section>
 </PagesLayout>

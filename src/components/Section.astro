@@ -1,0 +1,37 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+const { title, description } = Astro.props;
+---
+
+<section class="Section">
+	<h2 class="Section-title">{title}</h2>
+	{description && <p class="Section-description">{description}</p>}
+	<slot />
+</section>
+
+<style lang="scss">
+	.Section {
+		display: flex;
+		flex-flow: row wrap;
+		gap: 1em;
+		font-size: 14px;
+		margin-top: 3em;
+
+		&-title {
+			font-size: 2rem;
+			width: 100%;
+			text-align: center;
+			margin: 0;
+			line-height: 1;
+		}
+		&-description {
+			font-size: 1.2rem;
+			width: 100%;
+			text-align: center;
+			margin: 0;
+		}
+	}
+</style>

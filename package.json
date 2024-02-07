@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@fontsource-variable/raleway": "^5.0.17",
-    "astro": "^4.2.6"
+    "astro": "^4.3.2"
   },
   "devDependencies": {
     "sass": "^1.69.0"
